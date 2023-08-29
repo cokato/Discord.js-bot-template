@@ -1,4 +1,4 @@
-const { prefix, token } = require("./config.json");
+const { prefix, token1, token2 } = require("./config.json");
 
 const { Client, Intents, Collection } = require('discord.js');
 const bot = new Client({ 
@@ -64,4 +64,4 @@ bot.on("messageCreate", async message => {
 });
 
 //Token needed in config.json
-bot.login(token);
+bot.login(token1+token2);
